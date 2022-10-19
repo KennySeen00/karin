@@ -1,0 +1,140 @@
+:root {
+    --principal: #B68D40;
+    --secundario: #F4EBD0;
+    --terciario: #132620;
+    --cuaternario: #D6AD61;
+}
+
+a{
+    color: var(--principal);
+}
+
+a:hover{
+    color: var(--principal);
+}
+
+.nav-link{
+    color: var(--principal);
+}
+
+.nav-link:hover{
+    color: var(--cuaternario);
+}
+
+.separadaor{
+    background-color: whitesmoke;
+    width: 100%;
+    height: 100px;
+}
+
+.logo img{
+    width: 100px;
+    height: 60px;
+    float: left;
+    z-index: 1;
+    /* margin-left: 50px; */
+}
+
+main{
+    min-height: 100vh;
+    position: relative;
+}
+
+video{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.capa{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #1c1c1d;
+    opacity: 0.7;
+    /* mix-blend-mode: overlay; */
+}
+
+.intro{
+    padding-top: 160px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 60%;
+    height: 50%;
+    margin: 0px auto;
+    position: relative;
+    z-index: 2;
+    color: aliceblue;
+    font-size: 30px;
+    /* background: #1c1c1d;
+    opacity: 0.7; */
+    
+}
+
+.presentacion{
+    /* height: 200px; */
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: -webkit-readial-gradient(#B68D40,#D6AD61);
+}
+
+.presentacion span{
+    font-size: 120pt;
+    font-weight: bold;
+    position: relative;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    cursor: pointer;
+    transition: all 300ms ease-in-out;
+}
+
+.presentacion span::before{
+    content: var(--principal);
+    position: absolute;
+    transform: scale(1.1);
+    filter: blur(15px);
+}
+
+.presentacion span::after{
+    content: var(--cuaternario);
+    position: absolute;
+    top: 80%;
+    left: 0;
+    filter: blur(30px);
+    transform: contrast(250%);
+}
+
+.presentacion span:hover{
+    filter: contrast(250%);
+}
+
+.presentacion span:nth-child(1){
+    color: var(--principal);
+}
+.presentacion span:nth-child(2){
+    color: var(--cuaternario);
+}
+.presentacion span:nth-child(3){
+    color: var(--principal);
+}
+.presentacion span:nth-child(4){
+    color: var(--principal);
+}
+.presentacion span:nth-child(5){
+    color: var(--cuaternario);
+}
+.presentacion span:nth-child(6){
+    color: var(--principal);
+}
+.presentacion span:nth-child(7){
+    color: var(--principal);
+}
