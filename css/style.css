@@ -32,7 +32,7 @@ a:hover{
 }
 
 .link-more{
-    display: flex;
+    display: inline-flex;
     align-items: center;
     font-size: 13px;
     font-weight: 600;
@@ -56,9 +56,30 @@ section {
     padding-top: 160px;
     padding-bottom: 160px;
 }
+
+/* INTRO */
+.intro{
+    margin-bottom: 60px;
+}
+
+.intro h1{
+    margin-top: 16px;
+    margin-bottom:16px;
+}
+
+.intro h6{
+    color: var(--brand1);
+}
+
+.intro p{
+    max-width: 500px;
+    margin: auto;
+}
+
+
 /* NAVBAR */
 .navbar{
-    background: linear-gradient(to bottom,#735C45,rgba(115, 92, 69, 0.0));
+    background: linear-gradient(to bottom,#735C45,rgba(115, 92, 69, 0.1));
 }
 
 .navbar .navbar-nav .nav-link.active{
@@ -72,7 +93,7 @@ section {
 
 /* HERO */
 #hero{
-    background: linear-gradient(to right,#735C45,rgba(115, 92, 69, 0.0)),url(../img/cover_1.jpg);
+    background: linear-gradient(to right,#735C45,rgba(115, 92, 69, 0.1)),url(../img/cover_1.jpg);
     min-height: 100vh;
     background-position: center;
     background-size: cover;
@@ -81,6 +102,7 @@ section {
 #hero p{
     margin-top: 24px;
     margin-bottom: 24px;
+    font-size: 25px;
 }
 
 /* BTN */
@@ -111,12 +133,12 @@ section {
     background-color: var(--brand);
 }
 
-/* ABOUT */
-#about{
-    position: relative;;
+/* nosotros */
+#nosotros{
+    position: relative;
 }
 
-#about::after{
+#nosotros::after{
   content: "";
   width: 25%;
   height: 100%;
@@ -127,22 +149,27 @@ section {
   z-index: -1;
 }
 
-#about h6{
+#nosotros h6{
     color: var(--brand2);
+    text-align: center;    
 }
 
-#about h1{
+#nosotros h1{
     margin-top: 16px;
     margin-bottom: 24px;
     color: var(--white);
+    text-align: center;    
 }
 
-#about p{
+#nosotros p{
     color: var(--brand2);
+    text-align: center;    
 }
 
-#about img{
+#nosotros .signature{
     width: unset;
+    align-items: center;
+
 }
 
 /* SERVICIOS */
@@ -150,10 +177,32 @@ section {
     background-color: var(--bg2);
 }
 
-#servicios .container .servicio{
+#servicios .servicio .contenedor{
     padding: 32px;
 }
 
-#servicios p{
-    color: var(--brand2);
+#servicios .servicio p{
+    margin-top: 18px;
+    margin-bottom: 18px;
+    color: var(--brand1);
+}
+
+/* caracteristica */
+.caracteristica{
+   display: flex; 
+}
+
+.caracteristica .icon-caracteristica{
+    font-size: 38px;
+    color: var(--bg2);
+    line-height: 1;
+    margin-right: 16px;
+}
+
+.caracteristica p{
+    font-size: 14px;
+    margin-top: 16px;
+    margin-bottom: 16px;
+    color: var(--bg2);
+
 }
