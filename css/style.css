@@ -1,10 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Dela+Gothic+One&family=Inter:wght@400;500;600&display=swap');
 
 :root {
-    --bg1: #151828;
-    --bg2: #1B1F34;
-    --body: #959DCC;
-    --brand: #FFAB76;
+    --bg1: #B68D40;
+    --bg2: #735C45;
+    --body: #D6AD61;
+    --brand: #D6AD61;
+    --brand2: #132620;
     --white: #fff;
 }
 
@@ -17,6 +18,34 @@ body{
 
 h1,h2,h3,h4,h5,h6{
     font-family: "Dela Gothic One",'Segoe UI', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: white;
+}
+
+a{
+    color: var(--white);
+    text-decoration: none;
+    font-weight: 600;
+}
+
+a:hover{
+    color: var(--brand);
+}
+
+.link-more{
+    display: flex;
+    align-items: center;
+    font-size: 13px;
+    font-weight: 600;
+    text-transform: uppercase;
+    left: 1px;
+}
+
+.link-more .icon{
+    transition: all 0.4s ease;
+}
+
+.link-more:hover .icon{
+    transform: translateX(8px);
 }
 
 img {
@@ -27,8 +56,104 @@ section {
     padding-top: 160px;
     padding-bottom: 160px;
 }
+/* NAVBAR */
+.navbar{
+    background: linear-gradient(to bottom,#735C45,rgba(115, 92, 69, 0.0));
+}
+
+.navbar .navbar-nav .nav-link.active{
+    color: var(--brand);
+}
+
+.navbar-brand{
+    font-family: "Inter",'Segoe UI', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 32px;
+}
 
 /* HERO */
 #hero{
-    background: linear-gradient(#1B1F34,#1B1F34),url(../img/cover_1.jpg);
+    background: linear-gradient(to right,#735C45,rgba(115, 92, 69, 0.0)),url(../img/cover_1.jpg);
+    min-height: 100vh;
+    background-position: center;
+    background-size: cover;
+}
+
+#hero p{
+    margin-top: 24px;
+    margin-bottom: 24px;
+}
+
+/* BTN */
+.btn{
+    padding: 16px 36px;
+    font-family: "Dela Gothic One",'Segoe UI', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    transition: all 0.4s ease;
+    border-radius: 0;
+}
+
+.btn-brand{
+    background-color: var(--brand);
+}
+
+.btn-brand:hover{
+    background-color: transparent;
+    color: var(--brand);
+    border-color: var(--brand);
+}
+
+.btn-outline-brand{
+    background-color: transparent;
+    color: var(--brand);
+    border-color: var(--brand);    
+}
+
+.btn-outline-brand:hover{
+    background-color: var(--brand);
+}
+
+/* ABOUT */
+#about{
+    position: relative;;
+}
+
+#about::after{
+  content: "";
+  width: 25%;
+  height: 100%;
+  background-color: var(--brand);
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+
+#about h6{
+    color: var(--brand2);
+}
+
+#about h1{
+    margin-top: 16px;
+    margin-bottom: 24px;
+    color: var(--white);
+}
+
+#about p{
+    color: var(--brand2);
+}
+
+#about img{
+    width: unset;
+}
+
+/* SERVICIOS */
+#servicios{
+    background-color: var(--bg2);
+}
+
+#servicios .container .servicio{
+    padding: 32px;
+}
+
+#servicios p{
+    color: var(--brand2);
 }
