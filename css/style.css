@@ -79,7 +79,7 @@ section {
 
 /* NAVBAR */
 .navbar{
-    background: linear-gradient(to bottom,#735C45,rgba(115, 92, 69, 0.1));
+    background: linear-gradient(to bottom,#735C45,rgba(115, 92, 69, 0.9));
 }
 
 .navbar .navbar-nav .nav-link.active{
