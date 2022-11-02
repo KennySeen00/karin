@@ -79,7 +79,7 @@ section {
 
 /* NAVBAR */
 .navbar{
-    background: linear-gradient(to bottom,#735C45,rgba(115, 92, 69, 0.9));
+    background: linear-gradient(to bottom,#735C45,rgba(115, 92, 69, 0.8));
 }
 
 .navbar .navbar-nav .nav-link.active{
@@ -93,7 +93,7 @@ section {
 
 /* HERO */
 #hero{
-    background: linear-gradient(to right,#735C45,rgba(115, 92, 69, 0.1)),url(../img/cover_1.jpg);
+    background: linear-gradient(to right,#735C45,rgba(115, 92, 69, 0.1)),url(../img/portada-1.jpg);
     min-height: 100vh;
     background-position: center;
     background-size: cover;
